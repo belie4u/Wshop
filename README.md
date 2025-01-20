@@ -1,6 +1,6 @@
 ## Settings
 
-To use this package, you need to configure the following settings in your Django project. 
+ 
 
 ### **Required Settings**
 
