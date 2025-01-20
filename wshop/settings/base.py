@@ -247,21 +247,7 @@ OSCAR_DEFAULT_CURRENCY = "EUR"
 # }}}
 
 
-# Whether to send the payment receipt to the purchaser.
-STRIPE_SEND_RECEIPT = True
-# Your key from Stripe.
-STRIPE_PUBLISHABLE_KEY = "pk_test_LNlmXBMmiIuO0x19q8M5uNnb001UR2upLd"
-# Your secret key from Stripe.
-STRIPE_SECRET_KEY = "sk_test_VwE3PrbVTzbLHHj725DXcn5z00UqVSIL75"
-# If True, send the order to stripe as one combined line item, instead of one for each product. Default is True.
-STRIPE_COMPRESS_TO_ONE_LINE_ITEM = True
-# Use Stripe’s Prices API to send line items, rather than the defunct line_item object. Default is True. (See https://stripe.com/docs/payments/checkout/migrating-prices).
-STRIPE_USE_PRICES_API = True
-# The common portion of the URL parts of the following two URLs. Not used itself.
-STRIPE_RETURN_URL_BASE = "https://e2ff-103-179-239-164.ngrok-free.app/shop"
-STRIPE_PAYMENT_SUCCESS_URL = "{0}{1}".format(STRIPE_RETURN_URL_BASE, "/checkout/preview-stripe/{0}/")
-    
-STRIPE_PAYMENT_CANCEL_URL = "{0}{1}".format(STRIPE_RETURN_URL_BASE, "/checkout/stripe-payment-cancel/{0}/")
+
     
 
 # Taken from PayPal's documentation - these should always work in the sandbox
@@ -269,22 +255,22 @@ PAYPAL_SANDBOX_MODE = True
 PAYPAL_CALLBACK_HTTPS = False
 PAYPAL_API_VERSION = '119'
 
-PAYPAL_PAYFLOW_VENDOR_ID = 'mypaypalaccount'
-PAYPAL_PAYFLOW_PASSWORD = 'asdfasdfasdf'
+PAYPAL_PAYFLOW_VENDOR_ID = ''
+PAYPAL_PAYFLOW_PASSWORD = ''
 
 # These are the standard PayPal sandbox details from the docs - but I don't
 # think you can get access to the merchant dashboard.
-PAYPAL_API_USERNAME = 'sb-yeg9937052255@business.example.com'
-PAYPAL_API_PASSWORD = 'KCF74NZVZEMU4FRG'
-PAYPAL_API_SIGNATURE = 'AYh-XTRUJrmmCvvrw0pwKeXAiMWPAbCBWAm8gtSLKl7PzhjjbtSp4mBM'
+PAYPAL_API_USERNAME = ''
+PAYPAL_API_PASSWORD = ''
+PAYPAL_API_SIGNATURE = ''
 
 # Standard currency is GBP
 PAYPAL_CURRENCY = PAYPAL_PAYFLOW_CURRENCY = 'EUR'
 PAYPAL_PAYFLOW_DASHBOARD_FORMS = True
 
 # PayPal REST API credentials
-PAYPAL_CLIENT_ID = 'AWiPejCYcBjNclkyw6dFODrgSPMFdA5CX4FUPHWQjybPtUYIZqWvBKANIxmpSoL3S87KmZfaYTcdzmN2'
-PAYPAL_CLIENT_SECRET = 'EEH5O0S4P9V2b3S8h-XLPuP-UCrJXbPmPLVPQS50HzRPwP6XI29H55KrA8PEkMm9BSx_WFY4s1EhrFG8'
+PAYPAL_CLIENT_ID = ''
+PAYPAL_CLIENT_SECRET = ''
 
 
 OSCAR_DASHBOARD_NAVIGATION.append(
